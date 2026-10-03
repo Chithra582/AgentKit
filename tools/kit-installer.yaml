@@ -1,0 +1,13 @@
+name: "kit-installer"
+description: "Installs and bootstraps agent kits, bundles, and templates from the certified registry."
+input_schema:
+  type: "object"
+  properties:
+    kit_name:
+      type: "string"
+      description: "Name of the kit to install from registry."
+    target_dir:
+      type: "string"
+      description: "Local target directory for project scaffolding."
+  required:
+    - "kit_name"

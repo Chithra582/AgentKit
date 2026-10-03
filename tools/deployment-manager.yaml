@@ -1,0 +1,18 @@
+name: "deployment-manager"
+description: "Packages and deploys agent applications to serverless edge execution runtimes."
+input_schema:
+  type: "object"
+  properties:
+    project_path:
+      type: "string"
+      description: "Path to the agent kit directory."
+    environment:
+      type: "string"
+      enum:
+        - "preview"
+        - "staging"
+        - "production"
+      description: "Deployment environment target."
+  required:
+    - "project_path"
+    - "environment"

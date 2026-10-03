@@ -1,0 +1,10 @@
+name: "schema-validator"
+description: "Validates lamatic.config.ts configuration manifests and workflow node schemas."
+input_schema:
+  type: "object"
+  properties:
+    config_path:
+      type: "string"
+      description: "Path to the configuration manifest."
+  required:
+    - "config_path"

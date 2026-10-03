@@ -1,0 +1,14 @@
+name: "flow-executor"
+description: "Executes structured DAG agent workflows and multi-step integration pipelines."
+input_schema:
+  type: "object"
+  properties:
+    flow_id:
+      type: "string"
+      description: "Identifier of the target workflow flow."
+    input_payload:
+      type: "object"
+      description: "Initial input payload parameters passed to the flow."
+  required:
+    - "flow_id"
+    - "input_payload"
